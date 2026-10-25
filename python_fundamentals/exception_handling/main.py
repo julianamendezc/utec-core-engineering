@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 
-from raise_exception import raise_exception
+from raise_exception_msg import raise_exception_msg
 
-raise_exception()
+raise_exception_msg("Este es mi error personalizado")
