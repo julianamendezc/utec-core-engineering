@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
 
-from safe_print_division import safe_print_division
+from raise_exception import raise_exception
 
-a = 12
-b = 2
-result = safe_print_division(a, b)
-print("{:d} / {:d} = {}".format(a, b, result))
-
-a = 12
-b = 0
-result = safe_print_division(a, b)
-print("{:d} / {:d} = {}".format(a, b, result))
+raise_exception()
