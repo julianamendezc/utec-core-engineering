@@ -9,3 +9,17 @@ print(f"nb_print: {nb_print}")
 
 nb_print = safe_print_list(my_list, 10)
 print(f"nb_print: {nb_print}")
+
+from safe_print_integer import safe_print_integer
+
+value = 89
+has_been_print = safe_print_integer(value)
+print("Resultado:", has_been_print)
+
+value = "89"
+has_been_print = safe_print_integer(value)
+print("Resultado:", has_been_print)
+
+value = 4.5
+has_been_print = safe_print_integer(value)
+print("Resultado:", has_been_print)
