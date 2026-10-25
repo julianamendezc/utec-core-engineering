@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
-from read_file import read_file
+from write_file import write_file
 
-read_file("my_file_0.txt")
+nb_characters = write_file("my_first_file.txt", "This School is so cool!\n")
+print(nb_characters)
