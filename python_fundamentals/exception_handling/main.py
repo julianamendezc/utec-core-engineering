@@ -1,25 +1,17 @@
 #!/usr/bin/env python3
 
-from safe_print_list import safe_print_list
+
+from safe_print_list_integers import safe_print_list_integers
 
 my_list = [1, 2, 3, 4, 5]
 
-nb_print = safe_print_list(my_list, 2)
-print(f"nb_print: {nb_print}")
+nb_print = safe_print_list_integers(my_list, 2)
+print("nb_print: {:d}".format(nb_print))
 
-nb_print = safe_print_list(my_list, 10)
-print(f"nb_print: {nb_print}")
+my_list = [1, 2, 3, "School", 4, 5, [1, 2, 3]]
 
-from safe_print_integer import safe_print_integer
+nb_print = safe_print_list_integers(my_list, len(my_list))
+print("nb_print: {:d}".format(nb_print))
 
-value = 89
-has_been_print = safe_print_integer(value)
-print("Resultado:", has_been_print)
-
-value = "89"
-has_been_print = safe_print_integer(value)
-print("Resultado:", has_been_print)
-
-value = 4.5
-has_been_print = safe_print_integer(value)
-print("Resultado:", has_been_print)
+nb_print = safe_print_list_integers(my_list, len(my_list) + 2)
+print("nb_print: {:d}".format(nb_print))
