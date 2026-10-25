@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+from safe_print_list import safe_print_list
+
+my_list = [1, 2, 3, 4, 5]
+
+nb_print = safe_print_list(my_list, 2)
+print(f"nb_print: {nb_print}")
+
+nb_print = safe_print_list(my_list, 10)
+print(f"nb_print: {nb_print}")
