@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 
+from safe_print_division import safe_print_division
 
-from safe_print_list_integers import safe_print_list_integers
+a = 12
+b = 2
+result = safe_print_division(a, b)
+print("{:d} / {:d} = {}".format(a, b, result))
 
-my_list = [1, 2, 3, 4, 5]
-
-nb_print = safe_print_list_integers(my_list, 2)
-print("nb_print: {:d}".format(nb_print))
-
-my_list = [1, 2, 3, "School", 4, 5, [1, 2, 3]]
-
-nb_print = safe_print_list_integers(my_list, len(my_list))
-print("nb_print: {:d}".format(nb_print))
-
-nb_print = safe_print_list_integers(my_list, len(my_list) + 2)
-print("nb_print: {:d}".format(nb_print))
+a = 12
+b = 0
+result = safe_print_division(a, b)
+print("{:d} / {:d} = {}".format(a, b, result))
